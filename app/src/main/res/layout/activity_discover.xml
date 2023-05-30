@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient_background"
+    tools:context=".Discover">
+
+    <TextView
+        android:id="@+id/dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/discover_icon"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard"
+        app:srcCompat="@drawable/discover_icon_img" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dashboardCard"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/discover_icon"
+        app:cardPreventCornerOverlap="false">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:background="@color/gray"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/gain_insights"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="GAIN INSIGHTS"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/waterQualbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/dialog_box_background"
+                    android:elevation="10dp"
+                    android:text="What is Water Quality?"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/graytext"
+                    android:textAllCaps="false">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/waterParamsbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/dialog_box_background"
+                    android:elevation="10dp"
+                    android:text="What are Water Parameters?"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/graytext"
+                    android:textAllCaps="false">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/waterSourcesbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/dialog_box_background"
+                    android:elevation="10dp"
+                    android:text="Different water sources and levels"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/graytext"
+                    android:textAllCaps="false">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/waterSamplebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/dialog_box_background"
+                    android:elevation="10dp"
+                    android:text="What is Water Sampling?"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/graytext"
+                    android:textAllCaps="false">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/whoBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/dialog_box_background"
+                    android:elevation="10dp"
+                    android:text="World Health Organization (WHO)"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/graytext"
+                    android:textAllCaps="false">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
